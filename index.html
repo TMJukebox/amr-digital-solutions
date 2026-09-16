@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMR Digital Solutions — Web Design &amp; Development</title>
+<meta name="description" content="AMR Digital Solutions builds bold, high-performance websites for small businesses. Browse our project roster and start your build.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- INTRO LOADER -->
+<div id="intro-loader" aria-hidden="true">
+  <div class="intro-bar intro-bar--red"></div>
+  <div class="intro-bar intro-bar--black"></div>
+  <div class="intro-mark">
+    <span class="intro-mark__a">A</span><span class="intro-mark__m">M</span><span class="intro-mark__r">R</span>
+  </div>
+  <div class="intro-skip">CLICK TO SKIP</div>
+</div>
+
+<!-- CUSTOM CURSOR DOT (decorative) -->
+<div id="cursor-dot" aria-hidden="true"></div>
+
+<!-- HEADER / NAV -->
+<header id="site-header">
+  <a href="#hero" class="logo">
+    <span class="logo__mark">AMR</span><span class="logo__sub">DIGITAL SOLUTIONS</span>
+  </a>
+  <nav class="nav-desktop" aria-label="Primary">
+    <ul>
+      <li><a href="#hero"><span class="nav-index">01</span>HOME</a></li>
+      <li><a href="#work"><span class="nav-index">02</span>ROSTER</a></li>
+      <li><a href="#about"><span class="nav-index">03</span>ABOUT</a></li>
+      <li><a href="#services"><span class="nav-index">04</span>SERVICES</a></li>
+      <li><a href="#contact"><span class="nav-index">05</span>CONTACT</a></li>
+    </ul>
+  </nav>
+  <button id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE NAV PANEL -->
+<nav id="nav-mobile" aria-label="Mobile primary">
+  <ul>
+    <li><a href="#hero"><span class="nav-index">01</span>HOME</a></li>
+    <li><a href="#work"><span class="nav-index">02</span>ROSTER</a></li>
+    <li><a href="#about"><span class="nav-index">03</span>ABOUT</a></li>
+    <li><a href="#services"><span class="nav-index">04</span>SERVICES</a></li>
+    <li><a href="#contact"><span class="nav-index">05</span>CONTACT</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HERO / TITLE SCREEN -->
+  <section id="hero">
+    <div class="hero-stripes" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">// A NEW CHALLENGER APPROACHES</p>
+      <h1 class="hero-title">
+        <span class="hero-title__line hero-title__line--outline">AMR</span>
+        <span class="hero-title__line hero-title__line--fill">DIGITAL<br>SOLUTIONS</span>
+      </h1>
+      <p class="hero-tagline">Web design &amp; development for small businesses who want to look as good as they perform.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn--primary">VIEW THE ROSTER</a>
+        <a href="#contact" class="btn btn--ghost">START A PROJECT</a>
+      </div>
+    </div>
+    <a href="#work" class="scroll-cue" aria-label="Scroll to portfolio">
+      <span>SCROLL</span>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 16 4 8h16z" fill="currentColor"/></svg>
+    </a>
+  </section>
+
+  <!-- CHARACTER SELECT / PORTFOLIO -->
+  <section id="work">
+    <div class="section-head">
+      <p class="section-kicker">02 // SELECT YOUR PROJECT</p>
+      <h2 class="section-title">THE ROSTER</h2>
+      <p class="section-sub">Every build below is a client project ready to be swapped in — click a card to see the full brief.</p>
+    </div>
+
+    <div class="roster-grid" id="roster-grid"><!-- cards injected by script.js --></div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__frame" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__portrait" id="modal-portrait"></div>
+      <div class="modal__body">
+        <p class="modal__tag" id="modal-tag"></p>
+        <h3 class="modal__title" id="modal-title"></h3>
+        <p class="modal__desc" id="modal-desc"></p>
+        <div class="modal__stack" id="modal-stack"></div>
+        <a href="#" id="modal-link" class="btn btn--primary" target="_blank" rel="noopener">VISIT LIVE SITE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-portrait">
+      <div class="about-portrait__frame">AMR</div>
+    </div>
+    <div class="about-content">
+      <p class="section-kicker">03 // CHARACTER PROFILE</p>
+      <h2 class="section-title">ABOUT AMR</h2>
+      <p>AMR Digital Solutions is a one-person studio building fast, distinctive websites for small businesses — restaurants, contractors, boutiques, and local service providers who need a site that actually converts, not just exists.</p>
+      <p>Every project is designed from scratch, hand-coded for speed, and built to look sharp on any device. No bloated templates, no cookie-cutter layouts — just clean design and code that loads instantly.</p>
+      <div class="stat-list">
+        <div class="stat-row">
+          <span class="stat-label">DESIGN</span>
+          <span class="stat-track"><span class="stat-fill" style="width:95%"></span></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">FRONT-END DEV</span>
+          <span class="stat-track"><span class="stat-fill" style="width:92%"></span></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">PERFORMANCE</span>
+          <span class="stat-track"><span class="stat-fill" style="width:90%"></span></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">CLIENT COMMS</span>
+          <span class="stat-track"><span class="stat-fill" style="width:98%"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-head">
+      <p class="section-kicker">04 // ABILITIES</p>
+      <h2 class="section-title">SERVICES</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-card__index">I</span>
+        <h3>Custom Web Design</h3>
+        <p>Original layouts built around your brand — no drag-and-drop templates.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-card__index">II</span>
+        <h3>Development &amp; Build</h3>
+        <p>Hand-coded, responsive, fast-loading sites that work on every device.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-card__index">III</span>
+        <h3>E-Commerce</h3>
+        <p>Online stores with smooth checkout flows built to actually sell.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-card__index">IV</span>
+        <h3>SEO &amp; Performance</h3>
+        <p>Sites tuned to load fast and rank well from day one.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-card__index">V</span>
+        <h3>Ongoing Maintenance</h3>
+        <p>Updates, fixes, and support after launch so the site keeps working for you.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-card__index">VI</span>
+        <h3>Brand &amp; Identity</h3>
+        <p>Logo, color, and type direction that ties your whole presence together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-info">
+      <p class="section-kicker">05 // JOIN THE PARTY</p>
+      <h2 class="section-title">START YOUR<br>PROJECT</h2>
+      <p>Have a project in mind? Tell me about it and I'll follow up within 1-2 business days.</p>
+      <ul class="contact-details">
+        <li><span>EMAIL</span><a href="mailto:hello@amrdigitalsolutions.com">hello@amrdigitalsolutions.com</a></li>
+        <li><span>PHONE</span><a href="tel:+10000000000">[Your Phone Number]</a></li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">TELL ME ABOUT YOUR PROJECT</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--block">SEND MESSAGE</button>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer id="site-footer">
+  <span class="logo__mark">AMR</span>
+  <p>© <span id="year"></span> AMR Digital Solutions LLC. All rights reserved.</p>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
