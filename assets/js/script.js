@@ -9,51 +9,27 @@
 // ---------------------------------------------------------------------------
 const PROJECTS = [
   {
-    name: "[Project Name 01]",
-    tag: "[Industry / Type]",
-    description: "[Add a 2-3 sentence description: what the client needed, what you built, and the result — e.g. faster load times, more bookings, a cleaner checkout flow.]",
-    stack: ["[Tech]", "[Tech]", "[Tech]"],
-    url: "#",
+    name: "Sam Chapa Electrical",
+    tag: "Electrical Contractor",
+    description: "Marketing site for a family-owned commercial, residential, and industrial electrical contractor serving all of Texas. Built out a full services breakdown, a job-site gallery, licensing and insurance credentials, and clear paths to request a quote or reach the 24/7 emergency line.",
+    stack: ["Custom Build", "Responsive Design", "Lead Generation"],
+    url: "http://98.84.154.40",
     image: null
   },
   {
-    name: "[Project Name 02]",
-    tag: "[Industry / Type]",
-    description: "[Add a 2-3 sentence description of this project's goals and outcome.]",
-    stack: ["[Tech]", "[Tech]"],
-    url: "#",
+    name: "Cold Start Dab Co.",
+    tag: "Cannabis Retail — Coming Soon",
+    description: "A dark, neon-lit coming-soon page for a San Antonio smoke shop with two storefront locations. Holds the brand's place online with hours, both addresses, and a direct line while the full site is finished.",
+    stack: ["Custom Build", "Brand Identity", "Responsive Design"],
+    url: "https://coldstartdabco.com",
     image: null
   },
   {
-    name: "[Project Name 03]",
-    tag: "[Industry / Type]",
-    description: "[Add a 2-3 sentence description of this project's goals and outcome.]",
-    stack: ["[Tech]", "[Tech]", "[Tech]"],
-    url: "#",
-    image: null
-  },
-  {
-    name: "[Project Name 04]",
-    tag: "[Industry / Type]",
-    description: "[Add a 2-3 sentence description of this project's goals and outcome.]",
-    stack: ["[Tech]", "[Tech]"],
-    url: "#",
-    image: null
-  },
-  {
-    name: "[Project Name 05]",
-    tag: "[Industry / Type]",
-    description: "[Add a 2-3 sentence description of this project's goals and outcome.]",
-    stack: ["[Tech]", "[Tech]", "[Tech]"],
-    url: "#",
-    image: null
-  },
-  {
-    name: "[Project Name 06]",
-    tag: "[Industry / Type]",
-    description: "[Add a 2-3 sentence description of this project's goals and outcome.]",
-    stack: ["[Tech]", "[Tech]"],
-    url: "#",
+    name: "Champion Southern Landscaping",
+    tag: "Landscaping & Hardscaping",
+    description: "Full-service landscaping company site covering maintenance, cleanups, planting, and hardscaping across the Rio Grande Valley and Greater San Antonio. Includes a services breakdown, a recent-work gallery, and a quote-request flow built to turn visitors into booked jobs.",
+    stack: ["Custom Build", "Responsive Design", "Quote Funnel"],
+    url: "https://championsouthernlandscaping.com",
     image: null
   }
 ];
